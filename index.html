@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iso Tech | Evoluzione Automata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+
+    <a href="index.html" class="navbar__logo" aria-label="ISO TECH — Home">ISO TECH</a>
+
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html"     class="active" aria-current="page">Home</a></li>
+      <li><a href="prodotti.html">Prodotti</a></li>
+      <li><a href="chi-siamo.html">Chi Siamo</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+
+    <a href="prodotti.html#contatti" class="navbar__cta">
+      Get Started
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <button class="navbar__hamburger" aria-label="Apri menu"
+            aria-expanded="false" aria-controls="mobile-menu" id="hamburger-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="navbar__mobile" id="mobile-menu" role="menu">
+    <a href="index.html" role="menuitem">Home</a>
+    <a href="prodotti.html" role="menuitem">Prodotti</a>
+    <a href="chi-siamo.html" role="menuitem">Chi Siamo</a>
+    <a href="faq.html" role="menuitem">FAQ</a>
+    <a href="prodotti.html#contatti" class="navbar__cta" id="mobile-cta" role="menuitem">
+      Get Started
+      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" width="13" height="13">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <section class="demo-hero" id="home">
+    <h1 class="tech-reveal">Tecnologia <br>che <span class="blue-highlight">funziona.</span></h1>
+    <p class="hero-subtitle">Soluzioni digitali su misura per il tuo business.</p>
+  </section>
+
+  <section class="tech-stack" id="stack" aria-labelledby="tech-stack-title">
+
+    <div class="tech-stack__header">
+      <p class="tech-stack__eyebrow">Stack Tecnologico</p>
+      <h2 class="tech-stack__title" id="tech-stack-title">
+        Tecnologie di <span class="highlight">Punta</span>
+      </h2>
+      <p class="tech-stack__subtitle">
+        Strumenti scelti per performance, scalabilit&agrave; e developer experience.
+      </p>
+    </div>
+
+    <ul class="tech-stack__grid" role="list">
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/react.svg" alt="React logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">Frontend</span>
+          <p class="tech-card__name">React</p>
+          <p class="tech-card__desc">UI componentizzata, reattiva e dichiarativa.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/typescript.svg" alt="TypeScript logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">Linguaggio</span>
+          <p class="tech-card__name">TypeScript</p>
+          <p class="tech-card__desc">Tipizzazione statica per codice robusto e manutenibile.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/nodedotjs.svg" alt="Node.js logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">Backend</span>
+          <p class="tech-card__name">Node.js</p>
+          <p class="tech-card__desc">Runtime JavaScript asincrono ad alte performance.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/postgresql.svg" alt="PostgreSQL logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">Database</span>
+          <p class="tech-card__name">PostgreSQL</p>
+          <p class="tech-card__desc">Database relazionale open-source enterprise-grade.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/docker.svg" alt="Docker logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">DevOps</span>
+          <p class="tech-card__name">Docker</p>
+          <p class="tech-card__desc">Containerizzazione per deploy coerenti e isolati.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/kubernetes.svg" alt="Kubernetes logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">Infrastruttura</span>
+          <p class="tech-card__name">Kubernetes</p>
+          <p class="tech-card__desc">Orchestrazione container scalabile e fault-tolerant.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/graphql.svg" alt="GraphQL logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">API</span>
+          <p class="tech-card__name">GraphQL</p>
+          <p class="tech-card__desc">Query flessibili, tipizzate e introspettabili.</p>
+        </div>
+      </li>
+
+      <li class="tech-card">
+        <div class="tech-card__logo">
+          <img src="assets/terraform.svg" alt="Terraform logo" loading="lazy" />
+        </div>
+        <div class="tech-card__body">
+          <span class="tech-card__badge">IaC</span>
+          <p class="tech-card__name">Terraform</p>
+          <p class="tech-card__desc">Infrastruttura come codice, cloud-agnostic.</p>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="site-footer">
+    <span class="site-footer__logo">ISO TECH</span>
+    <ul class="site-footer__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prodotti.html">Prodotti</a></li>
+      <li><a href="chi-siamo.html">Chi Siamo</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <p class="site-footer__copy">&copy; 2025 Iso Tech. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script>
+  var navbar     = document.querySelector('.navbar');
+  var hamburger  = document.getElementById('hamburger-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var mobileCta  = document.getElementById('mobile-cta');
+
+  /* ── Navbar scroll ── */
+  window.addEventListener('scroll', function() {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  /* ── Hamburger toggle ── */
+  hamburger.addEventListener('click', function() {
+    var isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  /* ── Chiudi menu al click su qualsiasi link ── */
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── Chiudi menu con Escape ── */
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.focus();
+    }
+  });
+
+  /* ──────────────────────────────────────────────────────────────
+     CTA ADATTIVO: mobile → mailto, desktop → prodotti.html#contatti
+     Soglia: 768px (stessa del breakpoint CSS della navbar)
+     Viene rivalutato anche al resize della finestra per coprire
+     i casi di rotazione schermo o finestra ridimensionata.
+  ────────────────────────────────────────────────────────────── */
+  var MOBILE_BREAKPOINT  = 768;
+  var MOBILE_HREF        = 'mailto:isoo.team00@gmail.com';
+  var DESKTOP_HREF       = 'prodotti.html#contatti';
+
+  function updateMobileCta() {
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      mobileCta.href = MOBILE_HREF;
+    } else {
+      mobileCta.href = DESKTOP_HREF;
+    }
+  }
+
+  /* Esegui subito al caricamento */
+  updateMobileCta();
+
+  /* Rivaluta ad ogni resize (debounced per performance) */
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateMobileCta, 100);
+  }, { passive: true });
+</script>
+
+</body>
+</html>

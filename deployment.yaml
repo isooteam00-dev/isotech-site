@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: isotech-site
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: isotech
+  template:
+    metadata:
+      labels:
+        app: isotech
+    spec:
+      containers:
+        - name: isotech-container
+          image: sito-isotech:v1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: isotech-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: isotech
